@@ -1,0 +1,19 @@
+{
+  "name": "mordern-garden-arrangement",
+  "private": true,
+  "version": "0.0.0",
+  "desctiption": "Assignment created as a part of a project for adRespect.pl",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0"
+  }
+}

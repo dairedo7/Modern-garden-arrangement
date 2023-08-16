@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/svg+xml" href="/vite.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vite App</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <div class="flex items-center justify-between w-full py-4 px-6 sm:py-5 lg:py-6 sm_xl:px-16 lg:px-[89px]">
+                        <div class="flex items-center justify-between mx-auto w-full">
+                            <div class="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-12 text-center">
+                                <!-- LEFT SIDE -->
+                                <img
+                                    class="md:w-[114px] hidden sm:block"
+                                    src="./images/giarddesign.png"
+                                    alt="logo"
+                                    class=""
+                                >
+                                <!-- RIGHT SIDE -->
+                                <div class="items-center justify-between sm:justify-end w-full flex">
+                                    <div class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
+                                        <a class="flex items-center group" href="#">
+                                            <span class="text-xs md:text-sm">Oferta</span>
+                                            <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
+                                                <use href="./images/icons.svg#arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="text-xs md:text-sm">O firmie</a>
+                                        <a href="#" class="text-xs md:text-sm">Realizacje</a>
+                                        <a href="#" class="text-xs md:text-sm">Kontakt</a>
+                                    </div>
+                                    <button class="ml-5 sm_xl:ml-8">
+                                        <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
+                                            <use href="./images/icons.svg#magnifying-loop"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="sm:hidden" type="button" data-menu-open>
+                                        <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
+                                            <use href="./images/icons.svg#burger"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MOBILE MENU MODAL -->
+                    <div class="fixed right-0 bottom-0 h-full w-[300px] bg-[#FFE6C0] shadow-xl hidden" data-menu>
+                        <!-- CLOSE ICON -->
+                        <div class="flex justify-end p-8">
+                            <button class="hover:scale-[1.1] hover:transition-transform" data-menu-close>
+                                <svg class="w-10 h-10">
+                                    <use href="./images/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- MENU ITEMS -->
+                        <div class="ml-[33%] flex flex-col gap-10 text-2xl">
+                            <a href="#" class="hover:scale-[1.1] hover:text-gray-700 hover:transition-all">Home</a>
+                            <a href="#" class="hover:scale-[1.1] hover:text-gray-700 hover:transition-all">Benefits</a>
+                            <a href="#" class="hover:scale-[1.1] hover:text-gray-700 hover:transition-all">Our Classes</a>
+                            <a href="#" class="hover:scale-[1.1] hover:text-gray-700 hover:transition-all">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <div class="px-6 sm:pr-0 sm:pl-6 sm_xl:pl-0 py-8 sm:py-0 sm:flex sm:items-center bg-[#DCC1AB]">
+                    <div class="sm_xl:pl-16 lg:pl-[89px] sm:py-8 md:py-10 lg:py-12 mb-6 sm:mb-0 sm:pb-8 sm_xl:mr-12 lg:mr-16 sm:w-[50%] sm:mr-6">
+                        <h1 class="font-montserrat text-3xl md:text-5xl lg:text-6xl mb-6 sm:mr-9 md:mr-11">
+                            Nowoczesna aranżacja
+                            Twojego ogrodu
+                        </h1>
+                        <p class="text-xs md:text-sm lg:text-base mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+                            Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługi z indywidualnym podejściem do każdego projektu.
+                        </p>
+                        <div class="text-xs md:text-sm lg:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center">
+                            <a class="mb-5 md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto" href="">Skontaktuj się z nami</a>
+                            <a class="bg-transparent border-solid border-2 border-[#1B5B31] rounded-3xl outline-none py-3 px-6 text-[#1B5B31] w-[208px] md:w-auto" href="">Zobacz nasze realizacje</a>
+                        </div>
+                    </div>
+                    <div class="relative slider sm:w-[50%] sm:overflow-hidden">
+                        <div class="slider" data-slider>
+                            <div class="slide-container" slide>
+                                <img class="w-full" src="./images/garden-arrangement.png" alt="Modern Garden Arrangement">
+                            </div>
+                            <div class="slide-container hidden" slide>
+                                <img class="w-full" src="./images/garden-arrangement-2.png" alt="Modern Garden Arrangement">
+                            </div>
+                            <div class="slide-container hidden" slide>
+                                <img class="w-full" src="./images/garden-arrangement-3.png" alt="Modern Garden Arrangement">
+                            </div>
+                            <!-- Add more slide containers here -->
+                        </div>
+                        <button class="absolute left-0 bottom-0 p-2" data-prev-slide>&larr; Prev</button>
+                        <button class="absolute right-0 bottom-0 p-2" data-next-slide>Next &rarr;</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/scripts/index.js"></script>
+        <script type="module" src="/scripts/slider.js"></script>
+        <script type="module" src="./scripts/autoSwitchSlides.js"></script>
+    </body>
+</html>
