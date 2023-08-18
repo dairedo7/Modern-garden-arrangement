@@ -8,6 +8,7 @@ export default {
       sm_xl: '680px',
       md: '768px',
       lg: '1024px',
+      lg_xl: '1200px',
       xl: '1440px',
     },
     extend: {
@@ -16,7 +17,7 @@ export default {
         secondary: '#F5F0EC',
       },
       maxWidth: {
-        920: '920PX',
+        1440: '1440PX',
       },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'],
