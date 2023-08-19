@@ -25,7 +25,9 @@ export default {
       },
 
       boxShadow: {
-        darkWhite: '',
+        subtleGray: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;',
+        subtleInnerGray: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;',
+        borderBlack: 'rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;',
       },
 
       gridTemplateColumns: {
