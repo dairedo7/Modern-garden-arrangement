@@ -12,31 +12,45 @@
                 <div class="flex items-center justify-between w-full py-4 px-6 sm:py-5 lg:py-6 sm_xl:px-16 lg:px-[89px]">
                     <div class="flex items-center justify-between mx-auto w-full">
                         <div class="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-12 text-center">
-                            <!-- LEFT SIDE -->
-                            <img
-                                class="md:w-[114px] hidden sm:block"
-                                src="./images/giarddesign.png"
-                                alt="logo"
-                                class=""
-                            >
-                            <!-- RIGHT SIDE -->
+                            <a href="#">
+                                <img
+                                    class="md:w-[114px] hidden sm:block animate-wiggle"
+                                    src="./images/giarddesign.png"
+                                    alt="logo"
+                                    class=""
+                                >
+                            </a>
                             <div class="items-center justify-between sm:justify-end w-full flex">
                                 <div class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
-                                    <a class="flex items-center group transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" href="#">
+                                    <a class="flex items-center group transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" href="#" data-menu-trigger>
                                         <span class="text-xs md:text-sm">Oferta</span>
                                         <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
                                             <use href="./images/icons.svg#arrow"></use>
                                         </svg>
                                     </a>
+                                    <div class="hidden absolute top-12 mt-1 py-2 bg-white border rounded-md shadow-lg w-36 z-10" data-menu-dropdown>
+                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Nowoczesny ogród angielski</a>
+                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Strefa wejściowa ogrodu</a>
+                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Ogród, styl tradycyjny</a>
+                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Ogród zimowy</a>
+                                    </div>
                                     <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">O firmie</a>
                                     <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Realizacje</a>
                                     <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Kontakt</a>
                                 </div>
-                                <button class="ml-5 sm_xl:ml-8">
-                                    <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
-                                        <use href="./images/icons.svg#magnifying-loop"></use>
-                                    </svg>
-                                </button>
+                                <div class="relative">
+                                    <button class="ml-5 sm_xl:ml-8" id="searchButton">
+                                        <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
+                                            <use href="./images/icons.svg#magnifying-loop"></use>
+                                        </svg>
+                                    </button>
+                                    <input
+                                        type="text"
+                                        class="hidden absolute top-10 right-0 p-2 z-10 border border-gray-300 rounded-md shadow-md"
+                                        placeholder="Start searching here..."
+                                        id="searchInput"
+                                    >
+                                </div>
                                 <button class="sm:hidden" type="button" data-menu-open>
                                     <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
                                         <use href="./images/icons.svg#burger"></use>
@@ -59,16 +73,16 @@
                     <!-- MENU ITEMS -->
                     <ul class="ml-[33%] flex flex-col gap-10 text-2xl">
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
-                            <a href="#">Home</a>
+                            <a href="#">Oferta</a>
                         </li>
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
-                            <a href="#" class="">Benefits</a>
+                            <a href="#" class="">O firmie</a>
                         </li>
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
-                            <a href="#">Our Classes</a>
+                            <a href="#">Realizacje</a>
                         </li>
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
-                            <a href="#">Contact Us</a>
+                            <a href="#">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -257,17 +271,19 @@
         <footer>
             <div class="sm_xl:px-24 md:px-32 lg:px-32 py-8 md:py-[52px] lg:py-20 sm_xl:flex sm_xl:flex-col bg-black text-white px-6 sm_xl:py-10">
                 <div class="md:grid md:grid-cols-7 md:justify-between md:items-start w-full">
-                    <svg class="w-[114px] h-5 fill-current mb-3 sm_xl:col-span-3 hover:animate-wiggle">
-                        <use href="./images/icons.svg#giard-logo"></use>
-                    </svg>
-                    <p class="text-sm md:text-base mb-5 md:col-span-2 md:mr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <a href="#" class="mb-3 sm_xl:col-span-3">
+                        <svg class="w-[114px] h-5 fill-current animate-wiggle">
+                            <use href="./images/icons.svg#giard-logo"></use>
+                        </svg>
+                    </a>
+                    <p class="text-sm md:text-base mb-5 md:mb-0 md:col-span-2 md:mr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
                     <div class="text-sm md:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center sm_xl:w-[244px] md:col-span-2">
                         <a class="md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
                     </div>
                 </div>
                 <div class="w-full h-[1px] my-8 md:my-14 lg:my-16 bg-[#F5F0EC]"></div>
-                <div class="sm:grid sm:grid-cols-3 sm:mb-16 sm:justify-between sm_xl:grid-cols-8 lg:grid-cols-379 sm_xl:grid-rows-1 lg:gap-4 lg:flex lg:w-full">
-                    <ul class="grid grid-cols-2 gap-6 sm:gap-8 text-xs md:text-sm mb-12 sm:mb-0 md:mb-20 lg:mb-[120px] sm:col-span-2 sm_xl:col-span-6 sm_xl:grid-cols-6 sm_xl:grid-rows-1 lg:grid-cols-4 lg:col-span-4">
+                <div class="sm:grid sm:grid-cols-3 sm:mb-16 md:mb-24 lg:mb-[120px] sm:justify-between sm_xl:grid-cols-8 lg:grid-cols-379 sm_xl:grid-rows-1 lg:gap-4 lg:flex lg:w-full">
+                    <ul class="grid grid-cols-2 gap-6 sm:gap-8 text-xs md:text-sm mb-12 sm:mb-0 md:mb-0 lg:mb-[120px] sm:col-span-2 sm_xl:col-span-6 sm_xl:grid-cols-6 sm_xl:grid-rows-1 lg:grid-cols-4 lg:col-span-4">
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
                             <a href="#">Kontakt</a>
                         </li>
@@ -281,7 +297,7 @@
                             <a href="#">LinkedIn</a>
                         </li>
                     </ul>
-                    <div class="text-xs md:text-sm grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8 mb-12 sm:mb-0 md:mb-20 sm_xl:grid-cols-1 sm_xl:col-span-2 sm_xl:row-span-1 lg:grid-cols-2 lg:col-span-2">
+                    <div class="text-xs md:text-sm grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8 mb-12 sm:mb-0 md:mb-0 sm_xl:grid-cols-1 sm_xl:col-span-2 sm_xl:row-span-1 lg:grid-cols-2 lg:col-span-2">
                         <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">000-000-000</a>
                         <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">giarddesign@kontakt.pl</a>
                     </div>
@@ -301,7 +317,8 @@
         <script type="module" src="/scripts/index.js"></script>
         <script type="module" src="/scripts/slider.js"></script>
         <script type="module" src="/scripts/masonryLayout.js"></script>
-        <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
+        <script type="module" src="/scripts/dropdownMenu.js"></script>
+        <script type="module" src="/scripts/searchInput.js"></script>
         <!-- <script type="module" src="./scripts/autoSwitchSlides.js"></script> -->
     </body>
 </html>
