@@ -12,6 +12,15 @@ export default {
       xl: '1440px',
     },
     extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
       colors: {
         primary: '#000000',
         secondary: '#F5F0EC',
@@ -31,9 +40,10 @@ export default {
       },
 
       gridTemplateColumns: {
-        240: '240px auto',
+        379: '50px 65px 65px 55px 91px 154px',
       },
     },
   },
+
   plugins: [],
 };

@@ -57,12 +57,20 @@
                         </button>
                     </div>
                     <!-- MENU ITEMS -->
-                    <div class="ml-[33%] flex flex-col gap-10 text-2xl">
-                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">Home</a>
-                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">Benefits</a>
-                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">Our Classes</a>
-                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">Contact Us</a>
-                    </div>
+                    <ul class="ml-[33%] flex flex-col gap-10 text-2xl">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#" class="">Benefits</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">Our Classes</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -247,17 +255,47 @@
             </section>
         </main>
         <footer>
-            <div class="sm_xl:px-24 md:px-32 lg:px-[200px] py-8 md:py-[52px] lg:py-20 sm_xl:flex sm_xl:flex-col sm_xl:items-center bg-black text-white px-6 sm_xl:py-10">
-                <img src="./images/logo-black.png" alt="Giard Logo">
-                <p>Daj znać, co możemy dla Ciebie zrobić!</p>
-                <div class="text-xs md:text-sm lg:text-base flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center">
-                    <a class="bg-transparent border-solid border-2 border-white rounded-3xl outline-none py-3 px-6 w-[184px] md:w-auto flex items-center transition-all hover:border-none hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">
-                        Poznaj nas bliżej
-                        <svg class="w-4 h-4 fill-current ml-3">
-                            <use href="./images/icons.svg#arrow-right"></use>
+            <div class="sm_xl:px-24 md:px-32 lg:px-32 py-8 md:py-[52px] lg:py-20 sm_xl:flex sm_xl:flex-col bg-black text-white px-6 sm_xl:py-10">
+                <div class="md:grid md:grid-cols-7 md:justify-between md:items-start w-full">
+                    <svg class="w-[114px] h-5 fill-current mb-3 sm_xl:col-span-3 hover:animate-wiggle">
+                        <use href="./images/icons.svg#giard-logo"></use>
+                    </svg>
+                    <p class="text-sm md:text-base mb-5 md:col-span-2 md:mr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <div class="text-sm md:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center sm_xl:w-[244px] md:col-span-2">
+                        <a class="md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
+                    </div>
+                </div>
+                <div class="w-full h-[1px] my-8 md:my-14 lg:my-16 bg-[#F5F0EC]"></div>
+                <div class="sm:grid sm:grid-cols-3 sm:mb-16 sm:justify-between sm_xl:grid-cols-8 lg:grid-cols-379 sm_xl:grid-rows-1 lg:gap-4 lg:flex lg:w-full">
+                    <ul class="grid grid-cols-2 gap-6 sm:gap-8 text-xs md:text-sm mb-12 sm:mb-0 md:mb-20 lg:mb-[120px] sm:col-span-2 sm_xl:col-span-6 sm_xl:grid-cols-6 sm_xl:grid-rows-1 lg:grid-cols-4 lg:col-span-4">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">Kontakt</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#" class="">Instagram</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                    <div class="text-xs md:text-sm grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8 mb-12 sm:mb-0 md:mb-20 sm_xl:grid-cols-1 sm_xl:col-span-2 sm_xl:row-span-1 lg:grid-cols-2 lg:col-span-2">
+                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">000-000-000</a>
+                        <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">giarddesign@kontakt.pl</a>
+                    </div>
+                </div>
+                <div class="text-xs md:text-sm grid grid-cols-2 sm:justify-between-center gap-6 sm:gap-8">
+                    <p href="#" class="text-sm md:text-base">Prawa zastrzeżone &copy;&nbsp;2022</p>
+                    <a href="#" class="hover:scale-[1.1] sm:flex sm:justify-end hover:text-gray-700 transition-all">
+                        made by
+                        <svg class="w-[113px] h-6 fill-current ml-4">
+                            <use href="./images/icons.svg#adrespect-icon"></use>
                         </svg>
                     </a>
                 </div>
+                <div class="text-sm md:text-base grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8"></div>
             </div>
         </footer>
         <script type="module" src="/scripts/index.js"></script>
