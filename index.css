@@ -54,3 +54,12 @@ body,
 .expanded img {
   cursor: pointer;
 }
+
+.mb-11 {
+  margin-bottom: 44px;
+}
+
+.animate-translate {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+}

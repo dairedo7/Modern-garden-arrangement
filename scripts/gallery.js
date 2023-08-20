@@ -15,6 +15,7 @@ expandButton.addEventListener('click', (evt) => {
 
   if (isExpanded) {
     masonryContainer.classList.add('expanded');
+
     expandButton.innerHTML = 'Schowaj &uarr;';
     expandButton.style.bottom = '0';
 
