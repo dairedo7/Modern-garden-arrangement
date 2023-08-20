@@ -9,6 +9,8 @@ function generateGalleryItem(image) {
   galleryItem.src = image.preview;
   galleryItem.alt = image.description;
 
+  galleryItem.loading = 'lazy';
+
   galleryItem.addEventListener('click', () => openModal(image.original));
 
   return galleryItem;
