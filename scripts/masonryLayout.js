@@ -2,10 +2,10 @@ import Masonry from 'masonry-layout';
 
 import { refs } from './refs';
 
-const { masonryLayout } = refs();
+const { masonryContainer } = refs();
 
 window.addEventListener('load', () => {
-  const masonry = new Masonry(masonryLayout, {
+  const masonry = new Masonry(masonryContainer, {
     itemSelector: '.grid-item',
     columnWidth: '.grid-item',
     gutter: 40,

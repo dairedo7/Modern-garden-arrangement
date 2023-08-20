@@ -10,14 +10,8 @@ if (slidesContainer !== null) {
     showNextSlide(1);
   }
 
-  slidesContainer.addEventListener('mouseover', stopAutoSlider);
-  slidesContainer.addEventListener('mouseout', startAutoSlider);
-
-  function stopAutoSlider() {
-    clearInterval(slidesInterval);
-  }
-
-  function startAutoSlider() {
+  slidesContainer.addEventListener('mouseover', clearInterval(slidesInterval));
+  slidesContainer.addEventListener('mouseout', () => {
     slidesInterval = setInterval(setTimer, 2000);
-  }
+  });
 }

@@ -41,7 +41,16 @@ body,
 .hidden {
   display: hidden;
 }
+
 .slide {
   flex: 0 0 100%;
   transition: transform 0.3s ease-in-out;
+}
+
+.expanded .orange-gradient {
+  display: none;
+}
+
+.expanded img {
+  cursor: pointer;
 }

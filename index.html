@@ -224,15 +224,14 @@
                             <i>projekty</i>
                         </h2>
                     </div>
-                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center mxAuto grid-rows-masonry relative">
-                        <div class="orange-gradient w-full h-full absolute">
-                            <a class="bg-transparent border-solid border-2 border-black rounded-3xl outline-none py-3 px-6 flex items-center absolute -translate-y-1/2 -translate-x-1/2 left-[50%] bottom-[10%] hover:text-white hover:border-white hover:scale-[1.02] transition-all active:scale-[1.05]" href="#">
-                                Rozwiń
-                                <svg class="w-4 h-4 fill-current ml-3">
-                                    <use href="./images/icons.svg#arrow-bottom"></use>
-                                </svg>
-                            </a>
-                        </div>
+                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center mxAuto grid-rows-masonry relative pb-16">
+                        <div class="orange-gradient w-full h-full absolute"></div>
+                        <a id="expandButton" class="bg-transparent border-solid border-2 border-black rounded-3xl outline-none py-3 px-6 flex items-center absolute -translate-y-1/2 -translate-x-1/2 left-[50%] bottom-[6%] hover:text-white hover:border-white hover:scale-[1.02] transition-all active:scale-[1.05] z-10" href="#">
+                            Rozwiń
+                            <svg class="w-4 h-4 fill-current ml-3">
+                                <use href="./images/icons.svg#arrow-bottom"></use>
+                            </svg>
+                        </a>
                         <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-1.png" alt="Modern Garden Arrangement">
                         <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-2.png" alt="Modern Garden Arrangement">
                         <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-3.png" alt="Modern Garden Arrangement">
@@ -319,6 +318,7 @@
         <script type="module" src="/scripts/masonryLayout.js"></script>
         <script type="module" src="/scripts/dropdownMenu.js"></script>
         <script type="module" src="/scripts/searchInput.js"></script>
+        <script type="module" src="/scripts/gallery.js"></script>
         <!-- <script type="module" src="./scripts/autoSwitchSlides.js"></script> -->
     </body>
 </html>
