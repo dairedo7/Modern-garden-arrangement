@@ -11,5 +11,7 @@ export const refs = () => {
     searchInput: document.getElementById('searchInput'),
     expandButton: document.getElementById('expandButton'),
     expandContainer: document.getElementById('expandContainer'),
+    modal: document.getElementById('modal'),
+    modalImage: document.getElementById('modal-image'),
   };
 };
