@@ -1,46 +1,46 @@
-// import galleryData from '../data/galleryData.json';
-// import { refs } from './refs';
+import galleryData from '../data/galleryData.json';
+import { refs } from './refs';
 
-// const { masonryContainer, modal, modalImage } = refs();
+const { masonryContainer, modal, modalImage } = refs();
 
-// function generateGalleryItem(image) {
-//   const galleryItem = document.createElement('img');
-//   galleryItem.classList.add('w-full', 'sm_xl:w-[451px]', 'grid-item', 'inline-block', 'mb-6', 'sm_xl:mb-10', 'mxAuto');
-//   galleryItem.src = image.preview;
-//   galleryItem.alt = image.description;
+function generateGalleryItem(image) {
+  const galleryItem = document.createElement('img');
+  galleryItem.classList.add('w-full', 'sm_xl:w-[451px]', 'grid-item', 'inline-block', 'mb-6', 'sm_xl:mb-10', 'mxAuto');
+  galleryItem.src = image.preview;
+  galleryItem.alt = image.description;
 
-//   galleryItem.addEventListener('click', () => openModal(image.original));
+  galleryItem.addEventListener('click', () => openModal(image.original));
 
-//   return galleryItem;
-// }
+  return galleryItem;
+}
 
-// function openModal(imageUrl) {
-//   document.addEventListener('keydown', onEscClose);
+function openModal(imageUrl) {
+  document.addEventListener('keydown', onEscClose);
 
-//   modalImage.src = imageUrl;
-//   modal.style.display = 'block';
-// }
+  modalImage.src = imageUrl;
+  modal.style.display = 'block';
+}
 
-// const onModalClose = () => {
-//   document.removeEventListener('keydown', onEscClose);
-//   modal.style.display = 'none';
-// };
+const onModalClose = () => {
+  document.removeEventListener('keydown', onEscClose);
+  modal.style.display = 'none';
+};
 
-// const onEscClose = (e) => {
-//   if (e.key === 'Escape') {
-//     onModalClose();
-//   }
-// };
+const onEscClose = (e) => {
+  if (e.key === 'Escape') {
+    onModalClose();
+  }
+};
 
-// const onBackgroundClick = (evt) => {
-//   if (evt.target === evt.currentTarget) onModalClose();
-// };
+const onBackgroundClick = (evt) => {
+  if (evt.target === evt.currentTarget) onModalClose();
+};
 
-// document.removeEventListener('keydown', onEscClose);
+document.removeEventListener('keydown', onEscClose);
 
-// modal.addEventListener('click', onBackgroundClick);
+modal.addEventListener('click', onBackgroundClick);
 
-// galleryData.forEach((image) => {
-//   const galleryItem = generateGalleryItem(image);
-//   masonryContainer.insertAdjacentElement('beforeend', galleryItem);
-// });
+galleryData.forEach((image) => {
+  const galleryItem = generateGalleryItem(image);
+  masonryContainer.insertAdjacentElement('beforeend', galleryItem);
+});
