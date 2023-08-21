@@ -43,7 +43,7 @@
                                     </button>
                                     <input
                                         type="text"
-                                        class="hidden absolute top-10 right-0 p-2 z-10 border border-gray-300 rounded-md shadow-md"
+                                        class="hidden absolute top-10 -right-16 p-2 z-10 border border-gray-300 rounded-md shadow-md"
                                         placeholder="Start searching here..."
                                         id="searchInput"
                                     >
@@ -69,16 +69,16 @@
                     </div>
                     <!-- MENU ITEMS -->
                     <ul class="ml-[33%] flex flex-col gap-10 text-2xl">
-                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all mobile-menu-button">
                             <a href="#">Oferta</a>
                         </li>
-                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all mobile-menu-button">
                             <a href="#" class="">O firmie</a>
                         </li>
-                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all mobile-menu-button">
                             <a href="#">Realizacje</a>
                         </li>
-                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
+                        <li class="hover:scale-[1.1] hover:text-gray-700 transition-all mobile-menu-button">
                             <a href="#">Kontakt</a>
                         </li>
                     </ul>
@@ -243,15 +243,6 @@
                                 <use href="./images/icons.svg#arrow-bottom"></use>
                             </svg>
                         </a>
-                        <!-- <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-1.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-2.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-3.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-4.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-5.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-6.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-7.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-8.jpg" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-9.jpg" alt="Modern Garden Arrangement"> -->
                     </div>
                     <div id="modal" class="modal hidden fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75 z-10">
                         <!-- <span class="close absolute top-2 right-2 text-white text-xl cursor-pointer">&times;</span> -->
@@ -331,12 +322,13 @@
             </div>
         </footer>
         <script type="module" src="/scripts/index.js"></script>
-        <script type="module" src="/scripts/slider.js"></script>
+        <script type="module" src="/scripts/toggleMenu.js"></script>
+        <script type="module" src="/scripts/generateGallery.js"></script>
         <script type="module" src="/scripts/masonryLayout.js"></script>
+        <script type="module" src="/scripts/slider.js"></script>
         <script type="module" src="/scripts/dropdownMenu.js"></script>
         <script type="module" src="/scripts/searchInput.js"></script>
         <script type="module" src="/scripts/gallery.js"></script>
-        <script type="module" src="/scripts/imageOverlay.js"></script>
         <script type="module" src="/scripts/helpers/animations.js"></script>
     </body>
 </html>

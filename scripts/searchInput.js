@@ -1,4 +1,5 @@
 import { refs } from './refs';
+import { toggleSearchInput, hideSearchInput } from './helpers/onSearchInputActions';
 
 const { searchButton, searchInput } = refs();
 
@@ -17,16 +18,3 @@ document.addEventListener('keydown', (event) => {
     hideSearchInput();
   }
 });
-
-function toggleSearchInput() {
-  searchInput.classList.toggle('hidden');
-  if (!searchInput.classList.contains('hidden')) {
-    searchInput.focus();
-  }
-}
-
-function hideSearchInput() {
-  if (!searchInput.classList.contains('hidden')) {
-    searchInput.classList.add('hidden');
-  }
-}

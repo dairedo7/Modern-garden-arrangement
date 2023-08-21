@@ -1,8 +1,7 @@
 import { refs } from './refs';
+import { toggleDropdown, hideDropdown } from './helpers/onDropdownMenuClick';
 
 const { menuTrigger, menuDropdown } = refs();
-
-let isDropdownVisible = false;
 
 menuTrigger.addEventListener('click', () => {
   toggleDropdown();
@@ -26,18 +25,3 @@ document.addEventListener('keydown', (event) => {
     hideDropdown();
   }
 });
-
-function toggleDropdown() {
-  isDropdownVisible = !isDropdownVisible;
-  menuDropdown.classList.toggle('hidden', !isDropdownVisible);
-  if (isDropdownVisible) {
-    menuDropdown.querySelector('a').focus();
-  }
-}
-
-function hideDropdown() {
-  if (isDropdownVisible) {
-    isDropdownVisible = false;
-    menuDropdown.classList.add('hidden');
-  }
-}

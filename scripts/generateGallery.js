@@ -1,9 +1,9 @@
 import galleryData from '../data/galleryData.json';
-import { onImageLoad } from './helpers/onImageLoad';
+import { openModal, onEscClose, onBackgroundClick } from './helpers/onModalActions';
 
 import { refs } from './refs';
 
-const { masonryContainer, modal, modalImageEl } = refs();
+const { masonryContainer, modal } = refs();
 
 function generateGalleryItem(image) {
   const galleryItem = document.createElement('img');
@@ -18,27 +18,6 @@ function generateGalleryItem(image) {
 
   return galleryItem;
 }
-
-function openModal(imageUrl) {
-  document.addEventListener('keydown', onEscClose);
-  modal.style.display = 'block';
-  onImageLoad(imageUrl, modalImageEl);
-}
-
-const onModalClose = () => {
-  document.removeEventListener('keydown', onEscClose);
-  modal.style.display = 'none';
-};
-
-const onEscClose = (e) => {
-  if (e.key === 'Escape') {
-    onModalClose();
-  }
-};
-
-const onBackgroundClick = (evt) => {
-  if (evt.target === evt.currentTarget) onModalClose();
-};
 
 document.removeEventListener('keydown', onEscClose);
 modal.addEventListener('click', onBackgroundClick);

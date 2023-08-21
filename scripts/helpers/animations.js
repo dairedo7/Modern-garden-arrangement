@@ -1,4 +1,5 @@
 import { refs } from '../refs';
+
 const { masonryContainer, aboutUsSection, heroSlider, heroText, offerSection, ourApproachText, ourApproachButton, ourApproachExample, contactUs, footer } =
   refs();
 
@@ -39,7 +40,6 @@ galleryObserver.observe(masonryContainer);
 heroTextOsberver.observe(heroText);
 heroSliderOsberver.observe(heroSlider);
 offerObserver.observe(offerSection);
-
 ourApproachTextObserver.observe(ourApproachText);
 ourApproachButtonObserver.observe(ourApproachButton);
 ourApproachExampleObserver.observe(ourApproachExample);
