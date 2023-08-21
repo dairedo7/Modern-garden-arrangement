@@ -31,7 +31,7 @@ function toggleDropdown() {
   isDropdownVisible = !isDropdownVisible;
   menuDropdown.classList.toggle('hidden', !isDropdownVisible);
   if (isDropdownVisible) {
-    menuDropdown.querySelector('a').focus(); // Focus on the first item
+    menuDropdown.querySelector('a').focus();
   }
 }
 

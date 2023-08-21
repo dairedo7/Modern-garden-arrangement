@@ -1,8 +1,6 @@
 import { refs } from './refs';
 
-import imagesData from '../data/galleryData.json';
-
-const { masonryContainer, expandButton, expandContainer } = refs();
+const { masonryContainer, expandButton } = refs();
 
 const galleryImages = masonryContainer.querySelectorAll('img');
 
@@ -15,6 +13,7 @@ expandButton.addEventListener('click', (evt) => {
 
   if (isExpanded) {
     masonryContainer.classList.add('expanded');
+
     expandButton.innerHTML = 'Schowaj &uarr;';
     expandButton.style.bottom = '0';
 
