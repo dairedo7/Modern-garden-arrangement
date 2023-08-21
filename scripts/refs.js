@@ -21,5 +21,6 @@ export const refs = () => {
     ourApproachText: document.querySelector('[data-our-approach-text]'),
     contactUs: document.querySelector('[data-contact-us]'),
     footer: document.querySelectorAll('.data-footer-text'),
+    mobileMenuButtons: document.querySelectorAll('.mobile-menu-button'),
   };
 };
