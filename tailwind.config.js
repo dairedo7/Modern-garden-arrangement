@@ -28,6 +28,7 @@ export default {
         1440: '1440PX',
       },
       fontFamily: {
+        inter: ['Inter', 'Montserrat', 'sans-serif'],
         dmsans: ['DM Sans', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
       },

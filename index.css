@@ -9,22 +9,7 @@ html,
 body,
 #root,
 .app {
-  height: 100%;
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  @apply text-primary;
-}
-
-.grid-rows-masonry {
-  display: grid;
-  justify-content: center !important;
-  align-items: center !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.mxAuto {
-  margin-left: auto !important;
-  margin-right: auto !important;
+  @apply h-screen w-full text-primary font-inter;
 }
 
 .orange-gradient {
@@ -51,6 +36,12 @@ body,
 
 .mb-11 {
   margin-bottom: 44px;
+}
+
+@media screen and (min-width: 680px) {
+  .grid-item {
+    @apply w-[451px];
+  }
 }
 
 .animate-horizontal-movement {

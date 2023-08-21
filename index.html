@@ -19,7 +19,7 @@
                             </a>
                             <div class="items-center justify-between sm:justify-end w-full flex">
                                 <div class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
-                                    <a class="flex items-center group transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" data-menu-trigger>
+                                    <a class="flex items-center group transition-all cursor-pointer hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" data-menu-trigger>
                                         <span class="text-xs md:text-sm">Oferta</span>
                                         <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
                                             <use href="./images/icons.svg#arrow"></use>
@@ -98,7 +98,7 @@
                         </p>
                         <div class="text-xs md:text-sm lg:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center">
                             <a class="mb-5 md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
-                            <a class="bg-transparent border-solid border-2 border-[#1B5B31] rounded-3xl outline-none py-3 px-6 text-[#1B5B31] w-[208px] md:w-auto transition-all hover:border-none hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">Zobacz nasze realizacje</a>
+                            <a class="bg-transparent border-solid border-2 border-[#1B5B31] rounded-3xl outline-none py-3 px-6 text-[#1B5B31] w-[208px] md:w-auto transition-all hover:border-transparent hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">Zobacz nasze realizacje</a>
                         </div>
                     </div>
                     <div class="relative sm_xl:w-[50%] sm_xl:overflow-hidden translate-x-[20%] opacity-0" data-hero-slider>
@@ -106,7 +106,7 @@
                         <div>
                             <div class="slide-container" slide>
                                 <img
-                                    class="w-full"
+                                    class="w-full xl:h-[737px]"
                                     src="./images/garden-arrangement.jpg"
                                     alt="Modern Garden Arrangement"
                                     loading="lazy"
@@ -114,7 +114,7 @@
                             </div>
                             <div class="slide-container hidden" slide>
                                 <img
-                                    class="w-full"
+                                    class="w-full xl:h-[737px]"
                                     src="./images/garden-arrangement-2.jpg"
                                     alt="Modern Garden Arrangement"
                                     loading="lazy"
@@ -216,7 +216,7 @@
                             </p>
                         </div>
                         <div class="text-xs md:text-sm lg:text-base flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center opacity-0 -translate-x-[20%]" data-our-approach-button>
-                            <a class="bg-transparent border-solid border-2 border-white rounded-3xl outline-none py-3 px-6 w-[184px] md:w-auto flex items-center transition-all hover:border-none hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">
+                            <a class="bg-transparent border-solid border-2 border-white rounded-3xl outline-none py-3 px-6 w-[184px] md:w-auto flex items-center transition-all hover:border-transparent hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">
                                 Poznaj nas bliżej
                                 <svg class="w-4 h-4 fill-current ml-3">
                                     <use href="./images/icons.svg#arrow-right"></use>
@@ -235,7 +235,7 @@
                             <i>projekty</i>
                         </h2>
                     </div>
-                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center mxAuto grid-rows-masonry relative pb-16 -translate-x-[20%] opacity-0">
+                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center grid-rows-masonry relative pb-16 -translate-x-[20%] opacity-0">
                         <div class="orange-gradient w-full h-[70%] absolute bottom-0"></div>
                         <a id="expandButton" class="bg-transparent border-solid border-2 border-black rounded-3xl outline-none py-3 px-6 flex items-center absolute -translate-y-1/2 -translate-x-1/2 left-[50%] bottom-[6%] hover:text-white hover:border-white hover:scale-[1.02] transition-all active:scale-[1.05] z-10" href="#">
                             Rozwiń
@@ -245,7 +245,6 @@
                         </a>
                     </div>
                     <div id="modal" class="modal hidden fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75 z-10">
-                        <!-- <span class="close absolute top-2 right-2 text-white text-xl cursor-pointer">&times;</span> -->
                         <img id="modal-image" class="modal-content fixed max-w-full max-h-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2" loading="lazy">
                     </div>
                 </div>

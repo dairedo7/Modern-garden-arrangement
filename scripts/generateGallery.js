@@ -7,7 +7,7 @@ const { masonryContainer, modal } = refs();
 
 function generateGalleryItem(image) {
   const galleryItem = document.createElement('img');
-  galleryItem.classList.add('w-full', 'sm_xl:w-[451px]', 'grid-item', 'inline-block', 'mb-11', 'cursor-pointer');
+  galleryItem.classList.add('w-full', 'grid-item', 'inline-block', 'mb-11', 'cursor-pointer');
 
   galleryItem.src = image.preview;
   galleryItem.alt = image.description;
