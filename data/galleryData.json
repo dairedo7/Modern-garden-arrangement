@@ -1,47 +1,47 @@
 [
   {
-    "preview": "./images/projects-1.jpg",
+    "preview": "./assets/projects-1.jpg",
     "original": "https://i.ibb.co/BCCxkzF/projects-1.jpg",
     "description": "Modern Garden Arrangement nr.1"
   },
   {
-    "preview": "./images/projects-2.jpg",
+    "preview": "./assets/projects-2.jpg",
     "original": "https://i.ibb.co/mNDHnHs/projects-2.jpg",
     "description": "Modern Garden Arrangement nr.2"
   },
   {
-    "preview": "./images/projects-3.jpg",
+    "preview": "./assets/projects-3.jpg",
     "original": "https://i.ibb.co/3sdSNd9/projects-3.jpg",
     "description": "Modern Garden Arrangement nr.3"
   },
   {
-    "preview": "./images/projects-4.jpg",
+    "preview": "./assets/projects-4.jpg",
     "original": "https://i.ibb.co/z6F3ZG7/projects-4.jpg",
     "description": "Modern Garden Arrangement nr.4"
   },
   {
-    "preview": "./images/projects-5.jpg",
+    "preview": "./assets/projects-5.jpg",
     "original": "https://i.ibb.co/cbF7dn2/projects-5.jpg",
     "description": "New Garden Arrangement nr.1"
   },
   {
-    "preview": "./images/projects-6.jpg",
+    "preview": "./assets/projects-6.jpg",
     "original": "https://i.ibb.co/19tTGzr/projects-6.jpg",
     "description": "New Garden Arrangement nr.2"
   },
 
   {
-    "preview": "./images/projects-7.jpg",
+    "preview": "./assets/projects-7.jpg",
     "original": "https://i.ibb.co/k81pF6N/projects-7.jpg",
     "description": "New Garden Arrangement nr.3"
   },
   {
-    "preview": "./images/projects-8.jpg",
+    "preview": "./assets/projects-8.jpg",
     "original": "https://i.ibb.co/NVkfbcN/projects-8.jpg",
     "description": "New Garden Arrangement nr.4"
   },
   {
-    "preview": "./images/projects-9.jpg",
+    "preview": "./assets/projects-9.jpg",
     "original": "https://i.ibb.co/8shkRQW/projects-9.jpg",
     "description": "Peculiar Garden Arrangement"
   }
