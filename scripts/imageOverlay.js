@@ -1,8 +1,9 @@
 import galleryData from '../data/galleryData.json';
+import { onImageLoad } from './helpers/onImageLoad';
 
 import { refs } from './refs';
 
-const { masonryContainer, modal, modalImage } = refs();
+const { masonryContainer, modal, modalImageEl } = refs();
 
 function generateGalleryItem(image) {
   const galleryItem = document.createElement('img');
@@ -20,9 +21,8 @@ function generateGalleryItem(image) {
 
 function openModal(imageUrl) {
   document.addEventListener('keydown', onEscClose);
-
-  modalImage.src = imageUrl;
   modal.style.display = 'block';
+  onImageLoad(imageUrl, modalImageEl);
 }
 
 const onModalClose = () => {

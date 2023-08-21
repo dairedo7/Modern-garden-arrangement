@@ -1,49 +1,50 @@
-export const setupIntersectionObserver = (callback, options) => {
-  const defaultOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1,
-  };
+import { refs } from '../refs';
+const { masonryContainer, aboutUsSection, heroSlider, heroText, offerSection, ourApproachText, ourApproachButton, ourApproachExample, contactUs, footer } =
+  refs();
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          callback(entry.target);
-          observer.unobserve(entry.target); // Unobserve the element after the action
-        }
-      });
-    },
-    { ...defaultOptions, ...options }
-  );
+import { setupIntersectionObserver } from './intersectionObserver';
 
-  return observer;
+const animateHorizontalAppearance = (target) => {
+  target.classList.add('animate-horizontal-movement');
 };
 
-// // Usage example
-// const targetElement = document.querySelector('.target-element');
-// const observer = setupIntersectionObserver((target) => {
-//   // Element is visible in the viewport
-//   // Take action, such as triggering animations or loading content
-//   // Unobserve the element after the action
-// });
+const animateVerticalAppearance = (target) => {
+  target.classList.add('animate-vertical-movement');
+};
 
-// observer.observe(targetElement);
+const animateVisibility = (target) => {
+  target.classList.add('animate-visibility');
+};
 
-// export const setupIntersectionObserver = (callback, threshold = 0.2) => {
-//   const observerOptions = {
-//     root: null,
-//     rootMargin: '0px',
-//     threshold: threshold,
-//   };
+const aboutUsObserver = setupIntersectionObserver(animateHorizontalAppearance);
+aboutUsObserver.observe(aboutUsSection);
 
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         callback(entry.target);
-//       }
-//     });
-//   }, observerOptions);
+const galleryObserver = setupIntersectionObserver(animateHorizontalAppearance, { threshold: 0.05 });
 
-//   return observer;
-// };
+const heroTextOsberver = setupIntersectionObserver(animateHorizontalAppearance);
+const heroSliderOsberver = setupIntersectionObserver(animateHorizontalAppearance);
+
+const offerObserver = setupIntersectionObserver(animateHorizontalAppearance, { threshold: 0.9 });
+
+const ourApproachExampleObserver = setupIntersectionObserver(animateHorizontalAppearance, { threshold: 0.2 });
+const ourApproachTextObserver = setupIntersectionObserver(animateHorizontalAppearance, { threshold: 0.4 });
+const ourApproachButtonObserver = setupIntersectionObserver(animateHorizontalAppearance);
+
+const contactUsObserver = setupIntersectionObserver(animateVisibility, { threshold: 0.25 });
+
+const footerObserver = setupIntersectionObserver(animateVerticalAppearance, { threshold: 0.4 });
+
+aboutUsObserver.observe(aboutUsSection);
+galleryObserver.observe(masonryContainer);
+heroTextOsberver.observe(heroText);
+heroSliderOsberver.observe(heroSlider);
+offerObserver.observe(offerSection);
+
+ourApproachTextObserver.observe(ourApproachText);
+ourApproachButtonObserver.observe(ourApproachButton);
+ourApproachExampleObserver.observe(ourApproachExample);
+contactUsObserver.observe(contactUs);
+
+footer.forEach((text) => {
+  footerObserver.observe(text);
+});

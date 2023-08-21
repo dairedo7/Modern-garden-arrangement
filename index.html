@@ -13,17 +13,13 @@
                     <div class="flex items-center justify-between mx-auto w-full">
                         <div class="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-12 text-center">
                             <a href="#">
-                                <img
-                                    class="md:w-[114px] hidden sm:block animate-wiggle"
-                                    src="./images/giarddesign.png"
-                                    alt="logo"
-                                    class=""
-                                    loading="lazy"
-                                >
+                                <svg class="w-[114px] h-5 fill-current animate-wiggle">
+                                    <use href="./images/icons.svg#giard-logo-light"></use>
+                                </svg>
                             </a>
                             <div class="items-center justify-between sm:justify-end w-full flex">
                                 <div class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
-                                    <a class="flex items-center group transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" href="#" data-menu-trigger>
+                                    <a class="flex items-center group transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" data-menu-trigger>
                                         <span class="text-xs md:text-sm">Oferta</span>
                                         <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
                                             <use href="./images/icons.svg#arrow"></use>
@@ -89,10 +85,10 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="overflow-hidden">
             <section>
                 <div class="relative px-6 sm_xl:pr-0 sm_xl:pl-0 py-8 sm_xl:py-0 sm_xl:flex sm_xl:items-center bg-[#DCC1AB]">
-                    <div class="sm_xl:pl-16 lg:pl-[89px] sm_xl:py-8 md:py-10 lg:py-12 mb-6 sm_xl:mb-0 sm_xl:pb-8 sm_xl:mr-12 lg:mr-16 sm_xl:w-[50%]">
+                    <div class="sm_xl:pl-16 lg:pl-[89px] sm_xl:py-8 md:py-10 lg:py-12 mb-6 sm_xl:mb-0 sm_xl:pb-8 sm_xl:mr-12 lg:mr-16 sm_xl:w-[50%] -translate-x-[20%] opacity-0" data-hero-text>
                         <h1 class="font-montserrat text-3xl md:text-5xl lg:text-6xl mb-6 sm:mb-9 md:mb-11">
                             Nowoczesna aranżacja
                             Twojego ogrodu
@@ -105,13 +101,13 @@
                             <a class="bg-transparent border-solid border-2 border-[#1B5B31] rounded-3xl outline-none py-3 px-6 text-[#1B5B31] w-[208px] md:w-auto transition-all hover:border-none hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">Zobacz nasze realizacje</a>
                         </div>
                     </div>
-                    <div class="relative slider sm_xl:w-[50%] sm_xl:overflow-hidden">
+                    <div class="relative sm_xl:w-[50%] sm_xl:overflow-hidden translate-x-[20%] opacity-0" data-hero-slider>
                         <div class="bg-[#F5F0EC] absolute bottom-0 right-0 w-[30%] h-[60px] lg:h-[100px] z-10 hidden sm_xl:block"></div>
-                        <div class="slider" data-slider>
+                        <div>
                             <div class="slide-container" slide>
                                 <img
                                     class="w-full"
-                                    src="./images/garden-arrangement.png"
+                                    src="./images/garden-arrangement.jpg"
                                     alt="Modern Garden Arrangement"
                                     loading="lazy"
                                 >
@@ -119,15 +115,7 @@
                             <div class="slide-container hidden" slide>
                                 <img
                                     class="w-full"
-                                    src="./images/garden-arrangement-2.png"
-                                    alt="Modern Garden Arrangement"
-                                    loading="lazy"
-                                >
-                            </div>
-                            <div class="slide-container hidden" slide>
-                                <img
-                                    class="w-full"
-                                    src="./images/garden-arrangement-3.png"
+                                    src="./images/garden-arrangement-2.jpg"
                                     alt="Modern Garden Arrangement"
                                     loading="lazy"
                                 >
@@ -151,7 +139,7 @@
             </section>
             <section>
                 <div class="relative px-6 sm_xl:px-16 lg:px-[89px] py-20 md:py-28 lg:py-40 sm_xl:flex sm_xl:flex-col sm_xl:items-start bg-[#F5F0EC]">
-                    <div class="sm_xl:max-w-[68%] sm_xl:pl-12 lg:pl-28 xl:pl-32 lg:max-w-[80%] mb-16">
+                    <div class="sm_xl:max-w-[68%] sm_xl:pl-12 lg:pl-28 xl:pl-32 lg:max-w-[80%] mb-16 opacity-0 -translate-y-full" data-offer>
                         <span class="text-xs block text-[#1B5B31] mb-3 md:mb-4">Oferta</span>
                         <h2 class="text-2xl md:text-4xl lg:text-5xl mb-5 md:mb-8 font-montserrat font-semibold">
                             Działamy
@@ -161,7 +149,7 @@
                             Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i&nbsp;wcielimy w&nbsp;życie, a&nbsp;na&nbsp;każdym etapie posłużymy radą i&nbsp;wieloletnim doświadczeniem.
                         </p>
                     </div>
-                    <div id="about-us" class="sm:max-w-[440px] sm:mx-auto sm_xl:max-w-full sm_xl:flex -translate-x-[80%]">
+                    <div id="about-us" class="sm:max-w-[440px] sm:mx-auto sm_xl:max-w-full sm_xl:flex -translate-x-[80%] opacity-0">
                         <div class="bg-white rounded-2xl py-5 px-5 md:py-8 lg:py-12 md:px-8 lg:px-11 mb-9 sm_xl:mb-0 sm_xl:mr-5 lg:mr-12 xl:mr-16 hover:shadow-subtleGray hover:scale-[1.02] transition-transform">
                             <div class="bg-left-top bg-[url('./images/pencil-icon.png')] bg-no-repeat pt-12">
                                 <h3 class="mb-2 md:mb-3 lg:mb-5 text-xl md:text-2xl lg:text-[28px] lg:leading-6 font-montserrat font-semibold pt-5 md:pt-7 lg:pt-9">Projekty</h3>
@@ -209,23 +197,25 @@
             </section>
             <section>
                 <div class="relative px-6 sm_xl:pr-0 sm_xl:pl-0 py-8 sm_xl:py-0 sm_xl:flex sm_xl:items-center bg-[#DCC1AB]">
-                    <div class="relative sm_xl:w-[50%] mb-6 sm_xl:mb-0">
+                    <div class="relative sm_xl:w-[50%] mb-6 sm_xl:mb-0 opacity-0 -translate-x-[20%]" data-our-approach-example>
                         <img
                             class="w-full"
-                            src="./images/made-with-passion.png"
+                            src="./images/made-with-passion.jpg"
                             alt="Modern Garden Arrangement"
                             loading="lazy"
                         >
                     </div>
                     <div class="sm_xl:pl-16 lg:pl-[89px] sm_xl:py-8 md:py-10 lg:py-12 sm_xl:pb-8 sm_xl:mr-12 lg:mr-16 sm_xl:w-[50%] text-secondary">
-                        <h1 class="font-montserrat text-3xl md:text-5xl lg:text-6xl mb-10 sm:mr-9 md:mr-11">
-                            Tworzymy z
-                            <i>pasją</i>
-                        </h1>
-                        <p class="text-xs md:text-sm lg:text-base mb-8 sm:mb-10 md:mb-14 lg:mb-[72px]">
-                            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
-                        </p>
-                        <div class="text-xs md:text-sm lg:text-base flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center">
+                        <div class="opacity-0 translate-x-[20%]" data-our-approach-text>
+                            <h1 class="font-montserrat text-3xl md:text-5xl lg:text-6xl mb-10 sm:mr-9 md:mr-11">
+                                Tworzymy z
+                                <i>pasją</i>
+                            </h1>
+                            <p class="text-xs md:text-sm lg:text-base mb-8 sm:mb-10 md:mb-14 lg:mb-[72px]">
+                                Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.
+                            </p>
+                        </div>
+                        <div class="text-xs md:text-sm lg:text-base flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center opacity-0 -translate-x-[20%]" data-our-approach-button>
                             <a class="bg-transparent border-solid border-2 border-white rounded-3xl outline-none py-3 px-6 w-[184px] md:w-auto flex items-center transition-all hover:border-none hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">
                                 Poznaj nas bliżej
                                 <svg class="w-4 h-4 fill-current ml-3">
@@ -245,7 +235,7 @@
                             <i>projekty</i>
                         </h2>
                     </div>
-                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center mxAuto grid-rows-masonry relative pb-16">
+                    <div id="masonry-container" class="grid grid-cols-3 items-center justify-center mx-auto text-center mxAuto grid-rows-masonry relative pb-16 -translate-x-[20%] opacity-0">
                         <div class="orange-gradient w-full h-[70%] absolute bottom-0"></div>
                         <a id="expandButton" class="bg-transparent border-solid border-2 border-black rounded-3xl outline-none py-3 px-6 flex items-center absolute -translate-y-1/2 -translate-x-1/2 left-[50%] bottom-[6%] hover:text-white hover:border-white hover:scale-[1.02] transition-all active:scale-[1.05] z-10" href="#">
                             Rozwiń
@@ -253,15 +243,15 @@
                                 <use href="./images/icons.svg#arrow-bottom"></use>
                             </svg>
                         </a>
-                        <!-- <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-1.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-2.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-3.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-4.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-5.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-6.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-7.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-8.png" alt="Modern Garden Arrangement">
-                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-9.png" alt="Modern Garden Arrangement"> -->
+                        <!-- <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-1.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-2.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-3.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-4.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-5.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-6.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-7.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-8.jpg" alt="Modern Garden Arrangement">
+                        <img class="w-full sm_xl:w-[451px] grid-item inline-block mb-6 sm_xl:mb-10 mxAuto" src="./images/projects-9.jpg" alt="Modern Garden Arrangement"> -->
                     </div>
                     <div id="modal" class="modal hidden fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-75 z-10">
                         <!-- <span class="close absolute top-2 right-2 text-white text-xl cursor-pointer">&times;</span> -->
@@ -271,15 +261,15 @@
             </section>
             <section>
                 <div class="sm_xl:px-24 md:px-32 lg:px-[200px] py-8 md:py-[52px] lg:py-[60px] sm_xl:flex sm_xl:flex-col sm_xl:items-center bg-[#F5F0EC] text-white px-6 sm_xl:py-10">
-                    <div class="flex flex-col items-center sm:flex-row sm_xl:justify-between bg-[#1B5B31] px-6 sm:px-6 sm_xl:px-10 sm_xl:py-10 py-4 sm:gap-3 md:gap-7 lg:gap-14 md:py-14 lg:py-20 xl:py-[120px] lg:px-28">
-                        <h3 class="lg:text-4xl lg:text-[38px] lg:leading-[44px] text-xl sm_xl:text-2xl md:text-3xl font-montserrat mb-4 sm:mb-0 w-full sm:w-[54%] sm_xl:w-[60%]md:w-[64%] lg:w-[79%]">
+                    <div class="flex flex-col items-center sm:flex-row sm_xl:justify-between bg-[#1B5B31] px-6 sm:px-8 sm:py-8 sm_xl:px-10 sm_xl:py-14 py-4 sm:gap-3 md:gap-7 lg:gap-14 xl:gap-16 md:px-14 md:py-16 lg:py-20 xl:py-[120px] lg:px-20 xl:px-24 opacity-0" data-contact-us>
+                        <h3 class="lg:text-4xl lg:text-[40px] lg:leading-[44px] text-xl sm_xl:text-2xl md:text-3xl font-montserrat mb-4 sm:mb-0 w-full sm:w-[54%] sm_xl:w-[60%] md:w-[64%] lg:w-[82%] xl:w-[80%]">
                             Zostańmy w&nbsp;kontakcie!
                             <br>
                             Znajdziesz nas na
                             <span class="italic lg:text-4xl lg:text-[40px]">Instagramie.</span>
                         </h3>
-                        <div class="w-full sm:w-[46%] sm_xl:w-[40%] md:w-[36%] lg:w-[21%]">
-                            <p class="text-sm md:text-base lg:text-[15px] mb-4 md:mb-6">
+                        <div class="w-full sm:w-[46%] sm_xl:w-[40%] md:w-[36%] lg:w-[18%] xl:w-[20%]">
+                            <p class="text-sm md:text-base mb-4 md:mb-6 xl:w-[104%]">
                                 Śledź nasze
                                 <br>
                                 najnowsze realizacje!
@@ -292,22 +282,24 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="overflow-hidden">
             <div class="sm_xl:px-24 md:px-32 lg:px-32 py-8 md:py-[52px] lg:py-20 sm_xl:flex sm_xl:flex-col bg-black text-white px-6 sm_xl:py-10">
-                <div class="md:grid md:grid-cols-7 md:justify-between md:items-start w-full">
-                    <a href="#" class="sm_xl:col-span-3 block mb-5">
-                        <svg class="w-[114px] h-5 fill-current animate-wiggle  ">
-                            <use href="./images/icons.svg#giard-logo"></use>
+                <div class="md:flex lg:grid-cols-4 md:justify-between md:items-center w-full">
+                    <a href="#" class="sm_xl:col-span-3 lg:col-span-2 block mb-5 sm_xl:mb-0 data-footer-text -translate-y-[60%]">
+                        <svg class="w-[114px] h-5 fill-current animate-wiggle">
+                            <use href="./images/icons.svg#giard-logo-light"></use>
                         </svg>
                     </a>
-                    <p class="text-sm md:text-base mb-5 md:mb-0 md:col-span-2 md:mr-6">Daj znać, co możemy dla Ciebie zrobić!</p>
-                    <div class="text-sm md:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center sm_xl:w-[244px] md:col-span-2">
-                        <a class="md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
+                    <div class="md:flex md:w-[60%] md:items-center lg:justify-end">
+                        <p class="text-sm md:text-base mb-5 md:mb-0 md:mr-6 data-footer-text -translate-y-[60%]">Daj znać, co możemy dla Ciebie zrobić!</p>
+                        <div class="text-sm md:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center sm_xl:w-[208px] md:col-span-2 lg:col-span-1 data-footer-text -translate-y-[60%]">
+                            <a class="md:mb-0 sm_xl:mr-0 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z&nbsp;nami</a>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full h-[1px] my-8 md:my-14 lg:my-16 bg-[#F5F0EC]"></div>
                 <div class="sm:grid sm:grid-cols-3 sm:mb-16 md:mb-24 lg:mb-[120px] sm:justify-between sm_xl:grid-cols-8 lg:grid-cols-379 sm_xl:grid-rows-1 lg:gap-4 lg:flex lg:w-full">
-                    <ul class="grid grid-cols-2 gap-6 sm:gap-8 text-xs md:text-sm mb-12 sm:mb-0 md:mb-0 lg:mb-[120px] sm:col-span-2 sm_xl:col-span-6 sm_xl:grid-cols-6 sm_xl:grid-rows-1 lg:grid-cols-4 lg:col-span-4">
+                    <ul class="grid grid-cols-2 gap-6 sm:gap-8 text-xs md:text-sm mb-12 sm:mb-0 md:mb-0 lg:mb-[120px] sm:col-span-2 sm_xl:col-span-6 sm_xl:grid-cols-6 sm_xl:grid-rows-1 lg:grid-cols-4 lg:col-span-4 data-footer-text -translate-y-[60%]">
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all">
                             <a href="#">Kontakt</a>
                         </li>
@@ -321,12 +313,12 @@
                             <a href="#">LinkedIn</a>
                         </li>
                     </ul>
-                    <div class="text-xs md:text-sm grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8 mb-12 sm:mb-0 md:mb-0 sm_xl:grid-cols-1 sm_xl:col-span-2 sm_xl:row-span-1 lg:grid-cols-2 lg:col-span-2">
+                    <div class="text-xs md:text-sm grid grid-cols-2 sm:grid-cols-1 sm:col-span-1 gap-6 sm:gap-8 mb-12 sm:mb-0 md:mb-0 sm_xl:grid-cols-1 sm_xl:col-span-2 sm_xl:row-span-1 lg:grid-cols-2 lg:col-span-2 data-footer-text -translate-y-[60%]">
                         <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">000-000-000</a>
                         <a href="#" class="hover:scale-[1.1] hover:text-gray-700 transition-all">giarddesign@kontakt.pl</a>
                     </div>
                 </div>
-                <div class="text-xs md:text-sm grid grid-cols-2 sm:justify-between-center gap-6 sm:gap-8">
+                <div class="text-xs md:text-sm grid grid-cols-2 sm:justify-between-center gap-6 sm:gap-8 data-footer-text -translate-y-[60%]">
                     <p href="#" class="text-sm md:text-base">Prawa zastrzeżone &copy;&nbsp;2022</p>
                     <a href="#" class="hover:scale-[1.1] sm:flex sm:justify-end hover:text-gray-700 transition-all">
                         made by
@@ -345,6 +337,7 @@
         <script type="module" src="/scripts/searchInput.js"></script>
         <script type="module" src="/scripts/gallery.js"></script>
         <script type="module" src="/scripts/imageOverlay.js"></script>
-        <!-- <script type="module" src="./scripts/autoSwitchSlides.js"></script> -->
+        <script type="module" src="/scripts/helpers/animations.js"></script>
+        <script type="module" src="./scripts/autoSwitchSlides.js"></script>
     </body>
 </html>

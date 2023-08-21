@@ -1,8 +1,6 @@
 import { refs } from './refs';
 
-import imagesData from '../data/galleryData.json';
-
-const { masonryContainer, expandButton, expandContainer } = refs();
+const { masonryContainer, expandButton } = refs();
 
 const galleryImages = masonryContainer.querySelectorAll('img');
 
