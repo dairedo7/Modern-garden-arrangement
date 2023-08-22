@@ -12,6 +12,10 @@ body,
   @apply h-screen w-full text-primary font-inter;
 }
 
+a {
+  @apply block;
+}
+
 .orange-gradient {
   z-index: 1;
   background: linear-gradient(360deg, #dcc1ab 0%, rgba(214, 183, 158, 0) 100%);

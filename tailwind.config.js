@@ -23,6 +23,7 @@ export default {
       colors: {
         primary: '#000000',
         secondary: '#F5F0EC',
+        additional: '#1B5B31',
       },
       maxWidth: {
         1440: '1440PX',

@@ -18,23 +18,41 @@
                                 </svg>
                             </a>
                             <div class="items-center justify-between sm:justify-end w-full flex">
-                                <div class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
-                                    <a class="flex items-center group transition-all cursor-pointer hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" data-menu-trigger>
-                                        <span class="text-xs md:text-sm">Oferta</span>
-                                        <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
-                                            <use href="./images/icons.svg#arrow"></use>
-                                        </svg>
-                                    </a>
-                                    <div class="hidden absolute top-12 mt-1 py-2 bg-white border rounded-md shadow-lg w-36 z-10" data-menu-dropdown>
-                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Nowoczesny ogród angielski</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Strefa wejściowa ogrodu</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Ogród, styl tradycyjny</a>
-                                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:scale-[1.02]">Ogród zimowy</a>
-                                    </div>
-                                    <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">O firmie</a>
-                                    <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Realizacje</a>
-                                    <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Kontakt</a>
-                                </div>
+                                <ul class="sm:items-center sm:gap-4 sm_xl:gap-8 text-sm hidden sm:flex flex-wrap">
+                                    <li>
+                                        <a class="flex items-center group transition-all cursor-pointer hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse" data-menu-trigger>
+                                            <span class="text-xs md:text-sm">Oferta</span>
+                                            <svg class="w-6 h-4 fill-current group-hover:text-gray-600 hover:fill-gray-400 focus:fill-gray-400">
+                                                <use href="./images/icons.svg#arrow"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="hidden absolute top-12 mt-1 py-2 bg-white border rounded-md shadow-lg w-36 z-10" data-menu-dropdown>
+                                        <ul>
+                                            <li class="px-4 py-2 hover:bg-gray-100 transition-colors">
+                                                <a href="#" class="text-gray-700 hover:scale-[1.02]">Nowoczesny ogród angielski</a>
+                                            </li>
+                                            <li class="px-4 py-2 hover:bg-gray-100 transition-colors">
+                                                <a href="#" class="text-gray-700  hover:scale-[1.02]">Strefa wejściowa ogrodu</a>
+                                            </li>
+                                            <li class="px-4 py-2 hover:bg-gray-100 transition-colors">
+                                                <a href="#" class="text-gray-700 hover:scale-[1.02]">Ogród, styl tradycyjny</a>
+                                            </li>
+                                            <li class="px-4 py-2 hover:bg-gray-100 transition-colors">
+                                                <a href="#" class="text-gray-700 hover:scale-[1.02]">Ogród zimowy</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">O firmie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Realizacje</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-xs md:text-sm transition-all hover:scale-[1.05] hover:text-gray-700 hover:animate-pulse">Kontakt</a>
+                                    </li>
+                                </ul>
                                 <div class="relative">
                                     <button class="ml-5 sm_xl:ml-8" id="searchButton">
                                         <svg class="w-6 h-6 hover:fill-gray-400 focus:fill-gray-400">
@@ -59,7 +77,6 @@
                 </div>
                 <!-- MOBILE MENU MODAL -->
                 <div class="fixed right-0 z-40 bottom-0 h-full w-[300px] bg-[#FFE6C0] shadow-xl hidden" data-menu>
-                    <!-- CLOSE ICON -->
                     <div class="flex justify-end p-8">
                         <button class="hover:scale-[1.1] transition-transform" data-menu-close>
                             <svg class="w-10 h-10">
@@ -67,7 +84,6 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- MENU ITEMS -->
                     <ul class="ml-[33%] flex flex-col gap-10 text-2xl">
                         <li class="hover:scale-[1.1] hover:text-gray-700 transition-all mobile-menu-button">
                             <a href="#">Oferta</a>
@@ -97,8 +113,8 @@
                             Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługi z indywidualnym podejściem do każdego projektu.
                         </p>
                         <div class="text-xs md:text-sm lg:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center">
-                            <a class="mb-5 md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
-                            <a class="bg-transparent border-solid border-2 border-[#1B5B31] rounded-3xl outline-none py-3 px-6 text-[#1B5B31] w-[208px] md:w-auto transition-all hover:border-transparent hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">Zobacz nasze realizacje</a>
+                            <a class="mb-5 md:mb-0 sm_xl:mr-7 lg:mr-9 outline-none bg-additional rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z nami</a>
+                            <a class="bg-transparent border-solid border-2 border-additional rounded-3xl outline-none py-3 px-6 text-additional w-[208px] md:w-auto transition-all hover:border-transparent hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05]" href="">Zobacz nasze realizacje</a>
                         </div>
                     </div>
                     <div class="relative sm_xl:w-[50%] sm_xl:overflow-hidden translate-x-[20%] opacity-0" data-hero-slider>
@@ -137,7 +153,7 @@
             <section>
                 <div class="relative px-6 sm_xl:px-16 lg:px-[89px] py-20 md:py-28 lg:py-40 sm_xl:flex sm_xl:flex-col sm_xl:items-start bg-[#F5F0EC]">
                     <div class="sm_xl:max-w-[68%] sm_xl:pl-12 lg:pl-28 xl:pl-32 lg:max-w-[80%] mb-16 opacity-0 -translate-y-full" data-offer>
-                        <span class="text-xs block text-[#1B5B31] mb-3 md:mb-4">Oferta</span>
+                        <span class="text-xs block text-additional mb-3 md:mb-4">Oferta</span>
                         <h2 class="text-2xl md:text-4xl lg:text-5xl mb-5 md:mb-8 font-montserrat font-semibold">
                             Działamy
                             <i>kompleksowo</i>
@@ -153,7 +169,7 @@
                                 <p class="mb-10 md:mb-14 lg:mb-16 text-xs md:text-sm">
                                     Zaprojektujemy Twój ogród w&nbsp;nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
                                 </p>
-                                <a class="text-[#1B5B31] flex items-center border-b-[0.5px] border-[#1B5B31] pb-1 max-w-[171px] hover:text-green-500 transition-colors animate-bounce" href="">
+                                <a class="text-additional flex items-center border-b-[0.5px] border-additional pb-1 max-w-[171px] hover:text-green-500 transition-colors animate-bounce" href="">
                                     Dowiedz się więcej
                                     <svg class="w-4 h-4 fill-current ml-2.5">
                                         <use href="./images/icons.svg#arrow-right"></use>
@@ -167,7 +183,7 @@
                                 <p class="mb-10 md:mb-14 lg:mb-16 text-xs md:text-sm">
                                     Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
                                 </p>
-                                <a class="text-[#1B5B31] flex items-center border-b-[0.5px] border-[#1B5B31] pb-1 max-w-[171px] hover:text-green-500 transition-colors animate-bounce" href="">
+                                <a class="text-additional flex items-center border-b-[0.5px] border-additional pb-1 max-w-[171px] hover:text-green-500 transition-colors animate-bounce" href="">
                                     Dowiedz się więcej
                                     <svg class="w-4 h-4 fill-current ml-2.5">
                                         <use href="./images/icons.svg#arrow-right"></use>
@@ -181,7 +197,7 @@
                                 <p class="mb-10 md:mb-14 lg:mb-16 text-xs md:text-sm">
                                     Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i&nbsp;zaawansowanych technologii.
                                 </p>
-                                <a class="text-[#1B5B31] flex items-center border-b-[0.5px] border-[#1B5B31] pb-1 max-w-[207px] hover:text-green-500 transition-colors animate-bounce" href="">
+                                <a class="text-additional flex items-center border-b-[0.5px] border-additional pb-1 max-w-[207px] hover:text-green-500 transition-colors animate-bounce" href="">
                                     Zobacz nasze realizacje
                                     <svg class="w-4 h-4 fill-current ml-2.5">
                                         <use href="./images/icons.svg#arrow-right"></use>
@@ -226,7 +242,7 @@
             <section>
                 <div class="relative pt-16 md:pt-24 px-6 sm_xl:px-0 lg:pt-[120px] bg-[#DCC1AB]">
                     <div class="sm_xl:max-w-[68%] sm_xl:pl-24 lg:px-40 lg:max-w-[68%] mb-16 lg:mb-24 sm_xl:flex sm_xl:flex-col">
-                        <span class="text-xs block text-[#1B5B31] mb-3 md:mb-4">Realizacje</span>
+                        <span class="text-xs block text-additional mb-3 md:mb-4">Realizacje</span>
                         <h2 class="text-2xl md:text-4xl lg:text-5xl font-montserrat font-semibold">
                             Nasze
                             <i>projekty</i>
@@ -248,7 +264,7 @@
             </section>
             <section>
                 <div class="sm_xl:px-24 md:px-32 lg:px-[200px] py-8 md:py-[52px] lg:py-[60px] sm_xl:flex sm_xl:flex-col sm_xl:items-center bg-[#F5F0EC] text-white px-6 sm_xl:py-10">
-                    <div class="flex flex-col items-center sm:flex-row sm_xl:justify-between bg-[#1B5B31] px-6 sm:px-8 sm:py-8 sm_xl:px-10 sm_xl:py-14 py-4 sm:gap-3 md:gap-7 lg:gap-14 xl:gap-16 md:px-14 md:py-16 lg:py-20 xl:py-[120px] lg:px-20 xl:px-24 opacity-0" data-contact-us>
+                    <div class="flex flex-col items-center sm:flex-row sm_xl:justify-between bg-additional px-6 sm:px-8 sm:py-8 sm_xl:px-10 sm_xl:py-14 py-4 sm:gap-3 md:gap-7 lg:gap-14 xl:gap-16 md:px-14 md:py-16 lg:py-20 xl:py-[120px] lg:px-20 xl:px-24 opacity-0" data-contact-us>
                         <h3 class="lg:text-4xl lg:text-[40px] lg:leading-[44px] text-xl sm_xl:text-2xl md:text-3xl font-montserrat mb-4 sm:mb-0 w-full sm:w-[54%] sm_xl:w-[60%] md:w-[64%] lg:w-[82%] xl:w-[80%]">
                             Zostańmy w&nbsp;kontakcie!
                             <br>
@@ -261,7 +277,7 @@
                                 <br>
                                 najnowsze realizacje!
                             </p>
-                            <a class="text-sm md:text-base text-[#1B5B31] bg-white border-none rounded-3xl outline-none py-3 px-6 w-[184px] flex items-center justify-center transition-all hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05] sm_xl:w-[124px]" href="">
+                            <a class="text-sm md:text-base text-additional bg-white border-none rounded-3xl outline-none py-3 px-6 w-[184px] flex items-center justify-center transition-all hover:shadow-subtleInnerGray hover:scale-[1.02] active:scale-[1.05] sm_xl:w-[124px]" href="">
                                 Instagram
                             </a>
                         </div>
@@ -280,7 +296,7 @@
                     <div class="md:flex md:w-[60%] md:items-center lg:justify-end">
                         <p class="text-sm md:text-base mb-5 md:mb-0 md:mr-6 data-footer-text -translate-y-[60%]">Daj znać, co możemy dla Ciebie zrobić!</p>
                         <div class="text-sm md:text-base text-secondary flex flex-col flex-wrap w-full md:flex-row md:flex-nowrap text-center sm_xl:w-[208px] md:col-span-2 lg:col-span-1 data-footer-text -translate-y-[60%]">
-                            <a class="md:mb-0 sm_xl:mr-0 outline-none bg-[#1B5B31] rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z&nbsp;nami</a>
+                            <a class="md:mb-0 sm_xl:mr-0 outline-none bg-additional rounded-3xl py-3 px-6 w-[208px] md:w-auto transition-all hover:shadow-borderBlack hover:scale-[1.02] active:scale-[1.05]" href="">Skontaktuj się z&nbsp;nami</a>
                         </div>
                     </div>
                 </div>
