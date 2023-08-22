@@ -6,7 +6,6 @@ const { masonryContainer } = refs();
 window.addEventListener('load', () => {
   const masonry = new Masonry(masonryContainer, {
     itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
     fitWidth: true,
     gutter: 43,
     stagger: 30,

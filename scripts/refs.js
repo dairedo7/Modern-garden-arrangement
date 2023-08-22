@@ -22,5 +22,6 @@ export const refs = () => {
     contactUs: document.querySelector('[data-contact-us]'),
     footer: document.querySelectorAll('.data-footer-text'),
     mobileMenuButtons: document.querySelectorAll('.mobile-menu-button'),
+    galleryCollection: document.querySelectorAll('.grid-item'),
   };
 };

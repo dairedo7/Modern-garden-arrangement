@@ -1,48 +1,48 @@
 [
   {
-    "preview": "https://i.ibb.co/BCCxkzF/projects-1.jpg",
     "original": "https://i.ibb.co/BCCxkzF/projects-1.jpg",
-    "description": "Modern Garden Arrangement nr.1"
+    "description": "Modern Garden Arrangement nr.1",
+    "number": "1"
   },
   {
-    "preview": "https://i.ibb.co/mNDHnHs/projects-2.jpg",
     "original": "https://i.ibb.co/mNDHnHs/projects-2.jpg",
-    "description": "Modern Garden Arrangement nr.2"
+    "description": "Modern Garden Arrangement nr.2",
+    "number": "2"
   },
   {
-    "preview": "https://i.ibb.co/3sdSNd9/projects-3.jpg",
     "original": "https://i.ibb.co/3sdSNd9/projects-3.jpg",
-    "description": "Modern Garden Arrangement nr.3"
+    "description": "Modern Garden Arrangement nr.3",
+    "number": "3"
   },
   {
-    "preview": "https://i.ibb.co/z6F3ZG7/projects-4.jpg",
     "original": "https://i.ibb.co/z6F3ZG7/projects-4.jpg",
-    "description": "Modern Garden Arrangement nr.4"
+    "description": "Modern Garden Arrangement nr.4",
+    "number": "4"
   },
   {
-    "preview": "https://i.ibb.co/cbF7dn2/projects-5.jpg",
     "original": "https://i.ibb.co/cbF7dn2/projects-5.jpg",
-    "description": "New Garden Arrangement nr.1"
+    "description": "New Garden Arrangement nr.1",
+    "number": "5"
   },
   {
-    "preview": "https://i.ibb.co/19tTGzr/projects-6.jpg",
     "original": "https://i.ibb.co/19tTGzr/projects-6.jpg",
-    "description": "New Garden Arrangement nr.2"
+    "description": "New Garden Arrangement nr.2",
+    "number": "6"
   },
 
   {
-    "preview": "https://i.ibb.co/k81pF6N/projects-7.jpg",
     "original": "https://i.ibb.co/k81pF6N/projects-7.jpg",
-    "description": "New Garden Arrangement nr.3"
+    "description": "New Garden Arrangement nr.3",
+    "number": "7"
   },
   {
-    "preview": "https://i.ibb.co/NVkfbcN/projects-8.jpg",
     "original": "https://i.ibb.co/NVkfbcN/projects-8.jpg",
-    "description": "New Garden Arrangement nr.4"
+    "description": "New Garden Arrangement nr.4",
+    "number": "8"
   },
   {
-    "preview": "https://i.ibb.co/8shkRQW/projects-9.jpg",
     "original": "https://i.ibb.co/8shkRQW/projects-9.jpg",
-    "description": "Peculiar Garden Arrangement"
+    "description": "Peculiar Garden Arrangement",
+    "number": "9"
   }
 ]
