@@ -3,7 +3,7 @@ import { toggleDropdown, hideDropdown } from './helpers/onDropdownMenuClick';
 
 const { menuTrigger, menuDropdown } = refs();
 
-menuTrigger.addEventListener('click', () => {
+menuTrigger.addEventListener('mouseenter', () => {
   toggleDropdown();
 });
 
